@@ -59,7 +59,7 @@
             window.exifReaderListTags(tags);
             var cells = document.getElementsByTagName("td");
             if (Object.keys(tags).length === 0){
-              alert("Oh no! The image you uploaded does not have Exposure Time, ISO, or Aperture data!\n\nPlease check the file you uploaded!\n\nThis tool is powerful, but not perfect. If you believe that the file has that information, please email SteadyStatus21 at:\nsteadystatus21@gmail.com");
+              alert("Oh no!\nThe image you uploaded does not have any valid EXIF data!\n(Ex: Exposure Time, ISO, or Aperture)\n\nPlease check the file you uploaded!");
             }
             var lineBreak = document.createElement("br");
             for (var i = 0; i < cells.length; i++) {
